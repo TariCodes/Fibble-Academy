@@ -1,18 +1,35 @@
 ---
-import styles from "styles/global.scss";
+import { string } from "astro:schema";
+import { ViewTransitions } from "astro:transitions";
+import "../../src/styles/global.scss";
+
+interface Props {
+  title: string;
+  description?: string;
+  keyword?: string;
+}
+
+const {
+  title,
+  description,
+  keyword = "AI/ML, CyberSecurity, Data Science, Web Development, DevOps, Software Engineering, Software Development, Cloud computing",
+} = Astro.props;
 ---
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="" />
-  <meta
-    name="keywords"
-    content="AI/ML, CyberSecurity, Data Science, Web Development, DevOps, Software Engineering, Software Development, Tech"
-  />
+  <meta name="description" content={description} />
+  <meta name="keywords" content={keyword} />
 
-  <link rel="shortcut icon" href="/image/icons/f-ico.png" type="image/x-icon" />
+  <ViewTransitions />
+
+  <link
+    rel="shortcut icon"
+    href="/public/icons/f-ico.png"
+    type="image/x-icon"
+  />
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"

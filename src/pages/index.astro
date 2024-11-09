@@ -1,11 +1,377 @@
 ---
-import Header from "../component/Header.astro";
+import Nav from "../component/Nav.astro";
 import Footer from "../component/Footer.astro";
 import BaseLayout from "../layout/BaseLayout.astro";
+import Main from "../component/Main.astro";
+// import { Image } from "astro:assets";
 ---
 
-<BaseLayout>
-  <Header />
-  <h1>Astro</h1>
+<BaseLayout title="Fibble Academy | Innovating the future">
+  <Nav />
+  <Main>
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__contents">
+          <h1 class="hero__title">Re-Imagining the future through tech</h1>
+          <p class="hero__description">
+            We offer a supportive environment where you can <span
+              >learn and grow</span
+            >, and we provide you the necessary tools and resources you need for
+            to thrive.
+          </p>
+          <a class="hero__cta cta" href="#"> Get Started </a>
+        </div>
+        <div class="image flex items-center justify-center">
+          <a href="#"><img src="./image/icons/android-icon.png" alt="" /></a>
+          <a href="#"><img src="./image/icons/apple-icon.png" alt="" /></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses Section -->
+
+    <section class="courses">
+      <div class="container">
+        <div class="courses__content-wrapper">
+          <h2 class="courses__subtitle">
+            <span>Our Courses</span>
+          </h2>
+          <p class="courses__description">
+            Choose and develop yourself from our wide range of courses, and
+            catch up on the latest gigs and trends
+          </p>
+        </div>
+
+        <div class="course__items-wrapper">
+          <div class="card">
+            <img src="./image/ui_ux_design.png" alt="ui/ux design" />
+            <div class="card__body">
+              <h3 class="card__main-title">UI/UX design</h3>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
+                aliquam?
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./image/graphic_design.png" alt="" />
+            <div class="card__body">
+              <h3 class="card__main-title">Graphic design</h3>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                tenetur repellendus architecto eum eos fuga.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./image/web_design.png" alt="" />
+            <div class="card__body">
+              <h3 class="card__main-title">Web design</h3>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus enim blanditiis cum?
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./image/wireframe_design.png" alt="" />
+            <div class="card__body">
+              <h3 class="card__main-title">Cyber Security</h3>
+              <p class="card__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo
+                illum quo ullam!
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./image/product-design.png" alt="" />
+            <div class="card__body">
+              <h3 class="card__main-title">Digital Marketing</h3>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati minima quaerat omnis architecto?
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./image/programming1.png" alt="" />
+            <div class="card__body">
+              <h3 class="card__main-title">Mobile Development</h3>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Pariatur laborum adipisci ea accusamus voluptas!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tutor section -->
+
+    <section class="tutor">
+      <div class="container">
+        <h2 class="tutor__subtitle">
+          Learn from our wide range of creative experts
+        </h2>
+        <ul>
+          <li>
+            <!-- <Image /> -->
+            <img src="./image/instructor-1.jpg" alt="" />
+            <div>
+              <p class="tutor-name">Z&ouml;e Simon</p>
+              <p class="profession">Graphic Designer</p>
+              <div class="social-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <img src="./image/instructor-2.jpg" alt="" />
+            <div>
+              <p class="tutor-name">Kimberly Hudson</p>
+              <p class="profession">UI/UX Designer</p>
+              <div class="social-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <img src="./image/instructor-3.jpg" alt="" />
+            <div>
+              <p class="tutor-name">Kierra Sam</p>
+              <p class="profession">Software Engineer</p>
+              <div class="social-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <img src="./image/instructor-4.jpg" alt="" />
+            <div>
+              <p class="tutor-name">Matt Gardner</p>
+              <p class="profession">FullStack Web developer</p>
+              <div class="social-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Testimonial section -->
+
+    <section class="review">
+      <div class="container">
+        <h2 class="section-title">
+          Here's what the community is saying about Fibble Academy
+        </h2>
+
+        <ul>
+          <li>
+            <div class="review-header">
+              <img src="./image/pic-1.jpg" />
+
+              <div>
+                <span>Isaac Dominic</span>
+                <span>Introduction to Graphic Design</span>
+
+                <p>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star-half"></i></span>
+                  (128,000 reviews)
+                </p>
+
+                <button class="btn show-review">Show review</button>
+              </div>
+            </div>
+
+            <div>
+              <blockquote>
+                I'm so glad I decided to learn graphic design from Fibble
+                Academy. The instructors are incredibly knowledgeable and
+                passionate about their work, and they really take the time to
+                help each student succeed. I've learned so much in just a short
+                time, and I'm confident that I have the skills I need to start a
+                career in graphic design.
+              </blockquote>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <img src="./image/pic-2.jpg" alt="" />
+              <div>
+                <span>Semeya Rodriguez</span>
+                <span>Basics of Web Design</span>
+                <div>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  (128,000 reviews)
+                </div>
+                <button class="btn show-review">Show review</button>
+              </div>
+            </div>
+
+            <div>
+              <blockquote class="comment">
+                I'm thrilled to be here at FIbble Academy. The instructors are
+                experts in their field and they really know how to teach. They
+                break down complex concepts into easy-to-understand terms, and
+                they're always available to answer questions. I'm also really
+                impressed with the quality of the course materials. They're
+                comprehensive and up-to-date, and they cover everything you need
+                to know to become a successful web designer. I highly recommend
+                Fibble to anyone who's interested in learning web design.
+              </blockquote>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <img src="./image/pic-3.jpg" alt="" />
+              <div>
+                <span>Ashleigh Mona</span>
+                <span>Beginner for Figma</span>
+                <div>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  (128,000 reviews)
+                </div>
+                <button class="btn show-review">Show review</button>
+              </div>
+            </div>
+
+            <div>
+              <blockquote class="comment">
+                I really really love the way Kimberly breaks down each contents
+                they are comprehensive and well-structured. I've learned so much
+                in a short amount of time, and I feel confident that I can now
+                design user-friendly and visually appealing interfaces. One of
+                the things I appreciate most about Fibble is the focus on
+                hands-on learning. We get to apply what we learn in the courses
+                to real-world projects, which helps us solidify our knowledge
+                and skills.
+              </blockquote>
+            </div>
+          </li>
+        </ul>
+        <button>Load More</button>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+
+    <section class="contact">
+      <h2 class="section-title">Do well to reach us</h2>
+      <p class="section-subtitle">
+        Send us a mail and we will reach back to you
+      </p>
+
+      <div>
+        <div>
+          <h2>Get in touch</h2>
+          <p>
+            Use our contact form for all information requests or contact us
+            directly using the contact information below.
+          </p>
+          <p>Feel free to get in touch with us via email or phone</p>
+          <hr />
+          <div>
+            <img src="./image/icons/location-icon.svg" alt="location-icon" />
+            <div>
+              <h3>Our office Location</h3>
+              <p>
+                The interior design company <br />
+                The courtyard, AI Quoz 1, Colorado, USA
+              </p>
+            </div>
+          </div>
+          <div class="contact-details">
+            <img src="./image/icons/Phone-square-icon.svg" alt="phone-icon" />
+            <div>
+              <h3>Phone (Landline)</h3>
+              <p>+1 (555) 800 6564</p>
+            </div>
+          </div>
+        </div>
+
+        <form method="post" name="contact-form" autocomplete="on" id="form">
+          <div>
+            <div class="form-control">
+              <label for="contact-name">Name <span>*</span></label>
+              <br />
+              <input
+                tabindex="11"
+                type="text"
+                name="contact-name"
+                id="contact-name"
+                placeholder="Your Name"
+                title="please fill out your name"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="contact-mail">Email <span>*</span></label>
+              <br />
+              <input
+                tabindex="12"
+                type="email"
+                name="contact-mail"
+                id="contact-mail"
+                placeholder="Your email"
+                title="please fill out your email address"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-control">
+            <label for="contact-message">Message</label>
+            <br />
+            <textarea
+              tabindex="13"
+              name="contact-message"
+              id="contact-message"
+              cols="30"
+              rows="20"
+              placeholder="enter your message here"
+              maxlength="255"
+              title="type your message"
+            >
+            </textarea>
+          </div>
+          <button type="submit" class="btn msg-btn"> send a message </button>
+        </form>
+      </div>
+    </section>
+  </Main>
+
   <Footer />
 </BaseLayout>

@@ -1,0 +1,25 @@
+@use "colors" as *;
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1.95rem;
+}
+
+.cta {
+  background-color:$primary-color;
+  color: hsl(274, 96%, 10%);
+  padding: 18px 30px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 35px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  transition: all 0.9ms ease-out;
+}
+
+.card {
+  background-color:whitesmoke;
+  border-radius: 20px;
+  box-shadow: 1px 2px 3px rgb(185, 185, 185);
+  padding: 40px 0 20px 0;
+}

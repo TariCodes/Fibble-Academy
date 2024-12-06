@@ -3,10 +3,107 @@ import Nav from "../component/Nav.astro";
 import Footer from "../component/Footer.astro";
 import BaseLayout from "../layout/BaseLayout.astro";
 import Main from "../component/Main.astro";
+import { Image } from "astro:assets";
 ---
 
 <BaseLayout title="Fibble Academy | Learn">
   <Nav />
-  <Main />
+  <Main>
+    <!-- Courses Section -->
+
+    <section class="courses">
+      <div class="container">
+        <div class="courses__content-wrapper">
+          <h2 class="courses__subtitle">
+            <span>Our Courses</span>
+          </h2>
+          <p class="courses__description">
+            Choose and develop yourself from our wide range of courses, and
+            catch up on the latest gigs and trends
+          </p>
+        </div>
+
+        <div class="course-items">
+          <div class="card">
+            <img src="/public/images/AI-bg.jpg" alt="" />
+            <!-- <Image
+              src={"/images/AI-bg.jpg"}
+              Alt={"Intro to Aritficial Intelligence"}
+            /> -->
+            <div class="card__body">
+              <h3 class="card__main-title">
+                Introduction to Artificial Intelligence (AI)
+              </h3>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
+                aliquam?
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="/public/images/Deep_learning.jpg" alt="" />
+            <div class="card__body">
+              <h3 class="card__main-title">Introduction to Deep Learning</h3>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                tenetur repellendus architecto eum eos fuga.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="/public/images/computing-training.jpg" alt="" />
+            <div class="card__body">
+              <h3 class="card__main-title">Cognitive Computing Training</h3>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus enim blanditiis cum?
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="/public/images/AI-for-farming.webp" alt="" />
+            <div class="card__body">
+              <h3 class="card__main-title">
+                Artificial Intelligence (AI) for Farmers
+              </h3>
+              <p class="card__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo
+                illum quo ullam!
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="/public/images/AI-for-entrepreneur.jpg" alt="" />
+            <div class="card__body">
+              <h3 class="card__main-title">
+                Artificial Intelligence (AI) for Entreprenuers
+              </h3>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati minima quaerat omnis architecto?
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="/public/images/DLWTF.png" alt="" />
+            <div class="card__body">
+              <h3 class="card__main-title">
+                Deep Learning with TensorFlow Training
+              </h3>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Pariatur laborum adipisci ea accusamus voluptas!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </Main>
   <Footer />
 </BaseLayout>

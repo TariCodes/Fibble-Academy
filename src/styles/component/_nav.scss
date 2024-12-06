@@ -1,0 +1,96 @@
+.navbar {
+  padding: 1.35rem 0;
+  position: relative;
+  border-bottom: 1px solid hsl(0, 0%, 83%);
+
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+     @media screen and (min-width: 1000px) {
+        .nav--lg {
+            flex-direction: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__items li {
+            padding: 9px;
+            transition: border-bottom 0.3s ease-in;
+        }
+
+        &__items {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 1rem;
+            list-style: none;
+            padding: 0%;
+
+            a:hover {
+             color:#7e0fda;
+            }
+             
+                    
+        }
+
+        .signup--cta{
+         padding: 10px 25px;
+         font-size: 1rem;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+  }
+
+  .brand-name,.nav__items a {
+    color: #333;
+    font-size: 1.15rem;
+    font-weight: 500;
+  }
+
+    // .container .sm {
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: space-between;
+    // }
+
+    // .nav-items {
+    //     display: flex;
+    //     align-items: center;
+    //     gap: 1rem;
+    //     list-style: none;
+    //     padding: 0%;
+    // position: absolute;
+    //         z-index: 50;
+    //         top: 50%;
+    //         right: 5%;
+    //         width: 50%;
+    //         line-height: 1.9;
+    //         padding: 15px;
+    //         text-align: center;
+    //         margin-top: 20px;
+    //         flex-direction: column;
+    //         border-radius: 5px;
+    //         box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.7);
+    // }
+
+    // #nav-toggler {
+    //     display: none;
+    //     border: none;
+    //     padding: 10px 15px;
+    //     background: inherit;
+    //     outline: none;
+    //     color: #fff;
+    //     cursor: pointer;
+    //     position: absolute;
+    //     top: 4%;
+    //     right: 5%;
+    // }
+
+   
+}

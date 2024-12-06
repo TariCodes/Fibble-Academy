@@ -2,53 +2,54 @@
   <div class="container">
     <!-- Mobile Navigation - Show on mobile devices and hide on desktop -->
 
-    <!-- <button><i class="fas fa-bars"></i></button>
-
-    <div class="brand-wrapper">
-      <a href="/" class="brand-name">
-        <span>Fibble Academy</span>
-      </a>
-    </div>
-
-    <div>
-      <a href="/signup.astro" class="cta">
-        <span>Sign Up</span>
-      </a>
+    <!-- <div class="nav nav--sm">
+      <button><i class="fas fa-bars"></i></button>
+      <div class="brand-wrapper">
+        <a href="/" class="brand-name">
+          <span>Fibble Academy</span>
+        </a>
+      </div>
+      <div>
+        <a href="/signup.astro" class="cta">
+          <span>Sign Up</span>
+        </a>
+      </div>
     </div> -->
 
     <!-- Desktop Navigation - show on Desktop and hide on mobile -->
 
-    <div class="brand-wrapper">
-      <a href="/" class="brand-name">
-        <span>Fibble Academy</span>
-      </a>
-    </div>
-
-    <button id="nav-toggler">
-      <i class="fas fa-bars"></i>
-    </button>
-
-    <ul class="nav-items">
-      <li>
-        <a href="/learn">Learn</a>
-      </li>
-      <li>
-        <a href="/pricing">Pricing</a>
-      </li>
-      <li>
-        <a href="/resources">Resources</a>
-      </li>
-      <li>
-        <a href="/blog">Blog</a>
-      </li>
-    </ul>
-
-    <ul>
-      <li>
-        <a href="/signup.astro" class="cta">
-          <span>Sign Up</span>
+    <div class="nav nav--lg">
+      <div class="brand-wrapper">
+        <a href="/" class="brand-name">
+          <span>Fibble Academy</span>
         </a>
-      </li>
-    </ul>
+      </div>
+
+      <!-- <button id="nav-toggler">
+        <i class="fas fa-bars"></i>
+      </button> -->
+
+      <ul class="nav__items">
+        <li>
+          <a href="/learn" data-astro-prefetch="hover">Learn</a>
+        </li>
+        <li>
+          <a href="/pricing">Pricing</a>
+        </li>
+        <li>
+          <a href="/resources">Resources</a>
+        </li>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="/signup.astro" class="cta signup--cta">
+            <span>Sign Up</span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>

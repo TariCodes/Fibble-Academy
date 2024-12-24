@@ -8,64 +8,59 @@
   justify-content: center;
   align-items: center;
   color: hsl(0, 100%, 100%);
-background-image:url(/images/ai-robot-innovation-high-tech.png);
-background-repeat: no-repeat;
-background-size: cover;
-background-position: 60% 40%;
+  background-image:url(/images/ai-robot-innovation-high-tech.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 45% 40%;
+
+  .hero .container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero__title {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    @media screen and (min-width:1000px) {   
+      font-size: 3.9rem;
+      line-height: 1.6;
+      word-spacing: 0.1rem;
+      font-weight: 900;
+    }
+  }
+
+  .hero__description {
+
+    @media screen and (min-width:1000px) {
+      width: 1000px;
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 26px;
+      font-weight: 700; 
+    }
+  }
+  
+  .hero__cta {
+    padding: 10px 30px;
+    border-radius: 35px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 1rem;
+  }
 
 
-.hero .container {
-  justify-content: center;
-  align-items: center;
-}
+  @media screen and (min-width: 1000px) {
 
-// .hero__contents {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   padding: 50px 0;
-// }
-
-// .hero__description {
-//   width: 1000px;
-//   margin-bottom: 25px;
-//   font-size: 26px;
-// }
-
-// .hero__title {
-//   font-size: 3.5rem;
-//   line-height: 1.3;
-//   /* background-clip: content-box;
-//   background-image: linear-gradient(-130deg, #be0982, #17055e); */
-//   word-spacing: 0.1rem;
-//   /* text-align: justify; */
-// }
-
-
-@media screen and (min-width: 1000px) {
-
+  .hero {
+    background-position: 60% 40%;
+  }
   .hero__contents {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 90px 0;
-}
-
-.hero__title {
-  font-size: 3.75rem;
-  line-height: 1.6;
-  word-spacing: 0.1rem;
-  font-weight: 900;
-}
-
-.hero__description {
-  width: 1000px;
-  text-align: center;
-  margin-bottom: 25px;
-  font-size: 26px;
-  font-weight: 700;
 }
 
 .hero__cta {
